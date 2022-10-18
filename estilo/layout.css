@@ -3,7 +3,7 @@ section{
     grid-template-areas:
     "title nada"
     "parrafo media"
-    "add media";
+    "add media2";
     grid-template-columns: 3fr 1fr;
     gap:10px;
 }
