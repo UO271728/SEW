@@ -1,0 +1,40 @@
+section{
+    display:grid;
+    grid-template-areas:
+    "title nada"
+    "parrafo media"
+    "add media";
+    grid-template-columns: 3fr 1fr;
+    gap:10px;
+}
+
+section>p,table{
+    grid-area:parrafo;
+    margin-left:5px;
+}
+section>form{
+    grid-area:add;
+    margin-left:5px;
+}
+
+section> ul{
+    grid-area:add;
+}
+
+section>h3{
+    grid-area:title;
+}
+
+section>img,video,audio{
+    grid-area:media;
+}
+
+nav>a{
+    display: inline-block;
+    width: 10%;
+    padding: 5px 10px;
+    text-align: center;
+    border:1px solid;
+}
+
+

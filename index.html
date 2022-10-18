@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Rafael Muñiz Reguera"/>
+        <meta name="description" content="Resumen del lenguaje RUST con una explicacion de distintos aspectos"/>
+        <meta name="keywords" content="RUST,concurrencia,lenguaje,tipos,polimorfismo"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/> 
+        <title>RUST-Resumen</title>
+
+        <!-- enlace a la hoja de estilo-->
+        <link rel="stylesheet" type="text/css" href="estilo/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="estilo/layout.css"/>
+    </head>
+    <body>
+        <header>
+        <h1>RUST</h1>
+        <!--<img alt="Imagen Cangrejo Rust" src="multimedia/cangrejo_rust.jpg"/> -->
+        </header>
+        <nav>
+            <a href="index.html" accesskey="i" tabindex="1">Inicio</a>
+            <a href="historia.html" accesskey="h" tabindex="2">Historio</a>
+            <a href="popularidad.html" accesskey="p" tabindex="3">Popularidad</a>
+            <a href="formulario.html" accesskey="u" tabindex="4">Formulario</a>
+        </nav>
+        <main>
+        <h2>RESUMEN</h2>
+        <p>Es un lenguaje de programación compilado, de propósito general y multiparadigma que está siendo desarrollado por Fundación Rust. 
+            Es un lenguaje de programación multiparadigmático que soporta programación funcional pura, por procedimientos, imperativa y orientada a objetos. </p>
+        <section>
+        <h3>DESCRIPCION</h3>
+        <p>El objetivo es ser un buen lenguaje para la creacion de programas del lado dl cliente y servidor que se ejecuten en internet de tamaños grandes.Tienen un enfasis en la
+            seguridad,el control de distribución de la memoria y la concurrencia. La sintaxis de Rust es similar a la de C y C++ (siendo mas rapido que C++), con bloques 
+            de código delimitados por llaves y  estructuras de control de flujo tales como if, else, do, while y for pero sin tener presente todas las estructuras.E stá diseñado 
+            para un acceso a memoria seguro y no permite punteros nulos o colgantes. Ademasa los valores de los datos solo se pueden inicializar a traves de un conjunto fijo 
+            de formas cuyas entradas se requiere que ya hayan sido inicializadas. </p>
+        </section>
+        <section>
+        <h3>POLIMORFISMO E INFERENCIA DE TIPOS</h3>
+        <p>Para el polimorfismo, El sistema de tipos soporta un mecanismo similar a las clases de tipos, llamado "traits", inspirados directamente por el lenguaje Haskell.Esta 
+            es una facilidad para el polimorfismo que soporta distintos tipos de argumentos, lograda mediante la adición de restricciones para escribir declaraciones de variables.
+            Además cuenta con inferencia de tipos para las variables declaradas con la palabra clave let. Estas varibles no tienen que ser inicializadas para determinar su tipo, pero 
+            a tiempo de compilacion produce un error si cualquier rama del codigo falla al asignar un valor a una variable.Las funciones pueden recibir parametros genericos pero deben
+            ser delimitados por los traits.
+        </p>
+        </section>
+        <section>
+        <h3>CONCURRENCIA Y SISTEMA DE OBJETOS</h3>
+        <p>
+            La concurrencia es soportada por tareas simples.Las tareas se comunican a traves del paso de mensajes, en lugar de compartir los datos directamente.Por 
+            motivos de rendimiento, es posible enviar datos sin copiar, usar cajas únicas. Las cajas únicas son la garantía de tener un solo propietario, y puede ser 
+            liberada por la tarea de enviar para su uso por el receptor. El sistema de objetos de Rust se basa en implementaciones, traits y tipos estructurados. 
+            Las implementaciones cumplen una función similar a la de las clases en otros lenguajes, y se definen con la palabra clave impl. Herencia y polimorfismo 
+            son proporcionados por los traits, permiten que los métodos se definan y se mezclen en las implementaciones. Los tipos estructurados se utilizan para definir los campos. 
+            Implementaciones y rasgos no pueden definir los campos propios, y sólo los traits proporcionar herencia, con el fin de evitar el problema del diamante de C++. Para que 
+            se entienda mejor, se puede ver este video que explica tambien el lenguaje. A parte, para cualquier duda está disponible la 
+        <a href="https://doc.rust-lang.org/book/" title="Documentacion de Rust">Documentación</a>.</p>
+        <video src="multimedia/yt5sio-rust-in-100-seconds.mp4" controls preload="auto"> </video>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.rust-lang.org/es" ><img src="multimedia/rustFooter.png" alt="Footer de Rust"/></a>
+        <a href="https://twitter.com/rustlang" ><img src="multimedia/twitter.png" alt="Footer del twitter de Rust" /></a>
+    </footer>
+    </body>
+</html>
