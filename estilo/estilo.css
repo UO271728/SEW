@@ -3,7 +3,7 @@ body {
 }
 
 header{
-    background-color: darkorange;
+    background-color: #945100;
     padding:1.5em;
     color:white;
     text-align: center;
@@ -39,7 +39,7 @@ section>ul{
 }
 
 nav{
-    background-color: coral;
+    background-color: #B33000;
     padding: 20px;
 }
 
