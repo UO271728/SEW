@@ -19,12 +19,12 @@ footer{
     background-color: darkorange;
 }
 
-nav>a{
+nav a{
     color: aliceblue;
-    border-radius: 5px;
+    margin: auto;
 }
 
-nav>a:hover{
+nav a:hover{
     background-color:darkgoldenrod ;
 }
 
@@ -34,7 +34,11 @@ section{
     border-radius: 5px;
 }
 
-section>ul{
+section a{
+    text-align: center;
+}
+
+section ul{
     list-style-type: disclosure-closed;
 }
 
