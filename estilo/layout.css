@@ -2,11 +2,13 @@
 body,main{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /* Especificidad = 001*/ 
 nav{
     display: flex;
+    flex-wrap: wrap;
 
 }
 
