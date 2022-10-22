@@ -1,13 +1,16 @@
+/* Especificidad = 001*/ 
 body,main{
     display: flex;
     flex-direction: column;
 }
 
+/* Especificidad = 001*/ 
 nav{
     display: flex;
 
 }
 
+/* Especificidad = 001*/ 
 section{
     display:grid;
     grid-template-areas:
@@ -15,26 +18,32 @@ section{
     "parrafo media"
     "add media2";
     grid-template-columns: 3fr 1fr;
-    gap:10px;
+    gap:0.625em;
 }
 
+/* Especificidad = 002*/ 
 section>p,table{
     grid-area:parrafo;
-    margin-left:5px;
-}
-section>form{
-    grid-area:add;
-    margin-left:5px;
+    margin-left:0.3125em;
 }
 
+/* Especificidad = 002*/ 
+section>form{
+    grid-area:add;
+    margin-left:0.3125em;
+}
+
+/* Especificidad = 002*/ 
 section> ul{
     grid-area:add;
 }
 
+/* Especificidad = 002*/ 
 section>h3{
     grid-area:title;
 }
 
+/* Especificidad = 002*/ 
 section>img,video,audio{
     grid-area:media;
 }
