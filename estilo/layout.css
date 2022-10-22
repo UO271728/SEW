@@ -12,6 +12,12 @@ nav{
 
 }
 
+/* Especifidad = 001*/
+footer{
+    display:flex;
+    flex-wrap: wrap;
+}
+
 /* Especificidad = 001*/ 
 section{
     display:grid;
