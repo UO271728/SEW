@@ -19,39 +19,18 @@ h2{
     border-style: double;
 }
 
-/* Especificidad = 002*/ 
-footer{
-    background-color: #945100;
-    color:white;
-    text-align: center;
-}
-
-/* Especificidad = 002*/ 
-nav a{
-    color: aliceblue;
-    margin: auto;
-}
-
-/* Especificidad = 012*/ 
-nav a:hover{
-    background-color:darkgoldenrod ;
-    color: aliceblue;
-}
-
 /* Especificidad = 001*/ 
 section{
     background-color: antiquewhite;
     border-radius: 0.3125em;
+    margin:0.625em;
 }
 
-/* Especificidad = 002*/ 
-section a{
+/* Especificidad = 001*/ 
+footer{
+    background-color: #945100;
+    color:white;
     text-align: center;
-}
-
-/* Especificidad = 002*/ 
-section ul{
-    list-style-type: disclosure-closed;
 }
 
 /* Especificidad = 001*/ 
@@ -67,11 +46,29 @@ table,th,td  {
     margin: 0.0625em;
 }
 
-/* Especificidad = 001*/ 
-section{
-    margin:0.625em;
+/* Especificidad = 002*/ 
+nav a{
+    color: aliceblue;
+    margin: auto;
 }
 
+/* Especificidad = 012*/ 
+nav a:hover{
+    background-color:darkgoldenrod ;
+    color: aliceblue;
+}
+
+/* Especificidad = 002*/ 
+section a{
+    text-align: center;
+}
+
+/* Especificidad = 002*/ 
+section ul{
+    list-style-type: disclosure-closed;
+}
+
+/* Especifidad = 002*/
 section img{
    width: 80vw;
    max-width: 20em;

@@ -6,16 +6,10 @@ body,main{
 }
 
 /* Especificidad = 001*/ 
-nav{
+nav,footer{
     display: flex;
     flex-wrap: wrap;
 
-}
-
-/* Especifidad = 001*/
-footer{
-    display:flex;
-    flex-wrap: wrap;
 }
 
 /* Especificidad = 001*/ 
