@@ -55,7 +55,6 @@ nav a{
 /* Especificidad = 012*/ 
 nav a:hover{
     background-color:darkgoldenrod ;
-    color: aliceblue;
 }
 
 /* Especificidad = 002*/ 
