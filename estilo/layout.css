@@ -24,7 +24,7 @@ section{
 }
 
 /* Especificidad = 002*/ 
-section>p,table{
+section>p,section>table{
     grid-area:parrafo;
     margin-left:0.3125em;
 }
@@ -46,7 +46,7 @@ section>h3{
 }
 
 /* Especificidad = 002*/ 
-section>img,video,audio{
+section>img,section>video,section>audio{
     grid-area:media;
 }
 
